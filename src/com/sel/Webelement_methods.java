@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Webelement_methods {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Seleniumproject\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Seleniumproject\\Driver3\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -23,7 +23,7 @@ public class Webelement_methods {
         String attribute = emailId.getAttribute("name");
         System.out.println(attribute);
         
-        String attribute2 = emailId.getAttribute("value");
+       String attribute2 = emailId.getAttribute("value");
         System.out.println(attribute2);
         
         boolean displayed = emailId.isDisplayed();
@@ -52,4 +52,7 @@ public class Webelement_methods {
         
 	}
 
+
+
 }
+ 

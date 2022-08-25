@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Multiple_dropdown {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Seleniumproject\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Seleniumproject\\Driver3\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/Dropdown.html");
 		driver.manage().window().maximize();
@@ -28,32 +28,43 @@ public class Multiple_dropdown {
 		//s.deselectAll();
 		
 		System.out.println("All options");
-		List<WebElement> alloptions = s.getOptions();
+		
+		
+		
+	List<WebElement> alloptions = s.getOptions();
 		for (WebElement all : alloptions) {
 			String text = all.getText();
 			System.out.println(text);
 		}
-		
-		
 		System.out.println();
+		
+		
+		
+		
+		
 		System.out.println("All selected Options");
+		
+		
+		
+		
 		List<WebElement> allSelectedOptions = s.getAllSelectedOptions();
 		for(WebElement allselected : allSelectedOptions){
 			String text = allselected.getText();
 			System.out.println(text);
-			
 			System.out.println();
 			
 			System.out.println("First Selected Option");
+			
+			
+			
 			WebElement firstSelectedOption = s.getFirstSelectedOption();
 			String text2 = firstSelectedOption.getText();
 			System.out.println(text2);
 			
 		
 			
-		
-			
-		}
+				
+	}
 	}
 }
 

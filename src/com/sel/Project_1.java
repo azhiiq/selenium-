@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Project_1 {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Driver1\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Driver3\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

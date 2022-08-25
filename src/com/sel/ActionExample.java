@@ -1,4 +1,4 @@
-package com.sel;
+ package com.sel;
 
 import javax.swing.Action;
 
@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 public class ActionExample {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Driver3\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -34,7 +34,7 @@ public class ActionExample {
 		
 		Thread.sleep(3000);
 		
-		WebElement Shoe = driver.findElement(By.xpath("//img[contains(@alt,'aadi Running Shoes For Men')]"));
+			WebElement Shoe = driver.findElement(By.xpath("//img[@class='_396cs4 _3exPp9'][1])]"));
 		ac.moveToElement(Shoe).build().perform();
 		
 		Thread.sleep(3000);

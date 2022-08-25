@@ -15,7 +15,7 @@ public class WindowsHandling {
 
 	public static void main(String[] args) throws AWTException {
 		
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Driver3\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -55,10 +55,10 @@ public class WindowsHandling {
 		 
 		 String myTitle= "Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in\r\n"+ "";
 		 for (String id: windowHandles){
-			 if (driver.switchTo().window(id).getTitle().equals(myTitle));
-			 break;
+	 if (driver.switchTo().window(id).getTitle().equals(myTitle));
+			break;
 			 
-		 }
+	 }
 		 
 		 
 		 

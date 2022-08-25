@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Seleniumproject1 {
 public static void main(String[] args) throws InterruptedException {
 	
-	System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Seleniumproject\\Driver\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Seleniumproject\\Driver1\\chromedriver.exe");
 	
 	
 	//Browser  Launch
@@ -34,6 +34,7 @@ public static void main(String[] args) throws InterruptedException {
 	
 	String currentUrl = driver.getCurrentUrl();
 	System.out.println("CurrentUrl is:" +currentUrl);
+	driver.navigate().to(driver.getCurrentUrl());
 	
 	Thread.sleep(2000);
 	
@@ -41,7 +42,7 @@ public static void main(String[] args) throws InterruptedException {
 	driver.navigate().refresh();
 	
 	//close
-	driver.close();
+	//driver.close();
 
 	
 }

@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class FramesExample {
 
 	public static void main(String[] args) {
-    System.setProperty("webdriver.chrome.driver","C:\\Selenium\\Seleniumproject\\Driver\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver","C:\\Selenium\\Seleniumproject\\Driver1\\chromedriver.exe");
 		
 		WebDriver driver  = new ChromeDriver();
 		driver.get("http://demo.automationtesting.in/Frames.html");
@@ -32,7 +32,7 @@ public class FramesExample {
 		WebElement outerframe = driver.findElement(By.xpath("//iframe[@src='MultipleFrames.html']"));
 		driver.switchTo().frame(outerframe);
 		
-		//switch to inner frame
+		 //switch to inner frame
 		WebElement innerframe = driver.findElement(By.xpath("//iframe[@src='SingleFrame.html']"));
 		driver.switchTo().frame(innerframe);
 		

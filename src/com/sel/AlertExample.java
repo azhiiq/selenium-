@@ -10,7 +10,7 @@ public class AlertExample {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\Seleniumproject\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\Seleniumproject\\Driver1\\chromedriver.exe");
 		
 		WebDriver driver  = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/Alert.html");
@@ -42,7 +42,7 @@ public class AlertExample {
 		Thread.sleep(2000);
 		
 		Alert PromptAlert = driver.switchTo().alert();
-		//PromptAlert.sendKeys("web");
+		PromptAlert.sendKeys("web");
 		String text = PromptAlert.getText();
 		System.out.println(text);
 		PromptAlert.accept();

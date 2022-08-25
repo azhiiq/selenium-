@@ -14,7 +14,7 @@ public class WaitConcept {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")  + "\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")  + "\\Driver1\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -24,7 +24,7 @@ public class WaitConcept {
 		
 		//implicit wait
 		
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
 		
 		WebElement Email = driver.findElement(By.id("email"));
 		Email.sendKeys("ashistd22@gmail.com");
@@ -32,7 +32,7 @@ public class WaitConcept {
 		WebElement Password = driver.findElement(By.id("pass"));
 		
 		//explicit wait
-		WebDriverWait wait = new WebDriverWait(driver,20);
+		WebDriverWait wait = new WebDriverWait(driver,100);
 		wait.until(ExpectedConditions.visibilityOf(Password));	
 		
 		Password.sendKeys("123456799");
